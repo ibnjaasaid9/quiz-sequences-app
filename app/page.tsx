@@ -1,3 +1,5 @@
+import QuizHome from "@/components/QuizHome";
+
 export default function Home() {
-  return null;
+  return <QuizHome />;
 }

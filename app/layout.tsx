@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import QuizForm from "@/components/QuizForm";
 
 export const metadata: Metadata = {
-  title: "Mentoring Math - Quiz Correction Tool",
-  description: "Fast and accurate math sequences quiz correction tool with instant feedback",
+  title: "Quiz Real Analysis - Prof. IBNJAA Said",
+  description: "Interactive quiz platform for Real Analysis: Sequences, Series, Continuity, and Differentiability",
   openGraph: {
-    title: "Mentoring Math Quiz Correction",
-    description: "Interactive quiz tool for sequences - Prof. Said Ibn Jaa",
+    title: "Quiz Real Analysis",
+    description: "Master Real Analysis Concepts - Prof. IBNJAA Said",
     type: "website",
   },
 };
@@ -24,7 +23,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="antialiased">
-        <QuizForm />
+        {children}
       </body>
     </html>
   );
