@@ -13,7 +13,7 @@ export default function QuizHome() {
 
   const handleDownloadPDF = (filename: string) => {
     const link = document.createElement("a");
-    link.href = `/${filename}.pdf`;
+    link.href = `/${encodeURIComponent(filename)}.pdf`;
     link.download = `${filename}.pdf`;
     link.click();
   };
