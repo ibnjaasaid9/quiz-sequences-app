@@ -13,8 +13,8 @@ export default function QuizHome() {
 
   const handleDownloadPDF = (filename: string) => {
     const link = document.createElement("a");
-    link.href = `/${encodeURIComponent(filename)}.pdf`;
-    link.download = `${filename}.pdf`;
+    link.href = `/${filename}`;
+    link.download = `${filename}`;
     link.click();
   };
 
@@ -72,7 +72,7 @@ export default function QuizHome() {
                 </button>
                 <button
                   className={styles.btnSecondary}
-                  onClick={() => handleDownloadPDF("Quiz Sequences")}
+                  onClick={() => handleDownloadPDF("quiz-sequences.pdf")}
                 >
                   ⬇ Download PDF
                 </button>
@@ -100,7 +100,7 @@ export default function QuizHome() {
                 </button>
                 <button
                   className={styles.btnSecondary}
-                  onClick={() => handleDownloadPDF("Quiz Global")}
+                  onClick={() => handleDownloadPDF("quiz-global.pdf")}
                 >
                   ⬇ Download PDF
                 </button>
