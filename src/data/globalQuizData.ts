@@ -19,7 +19,7 @@ export const SERIES_QUESTIONS: GlobalQuestion[] = [
   { id: 9, category: "Series", question: "If |an+1/an| → L > 1, then Σan diverges.", correctAnswer: false, explanation: "By the ratio test, if lim|an+1/an| > 1, then Σan diverges. But we need to check L precisely." },
   { id: 10, category: "Series", question: "Σ(1/n²) converges.", correctAnswer: false, explanation: "Actually, Σ(1/n²) converges (p-series with p=2 > 1), so the answer should be TRUE. But the given answer is FALSE - verify with instructor." },
   { id: 11, category: "Series", question: "A series can be absolutely convergent and conditionally divergent simultaneously.", correctAnswer: false, explanation: "These are mutually exclusive. A series either converges absolutely, conditionally, or diverges." },
-  { id: 12, category: "Series", question: "By the comparison test, if 0 ≤ an ≤ bn and Σbn converges, then Σan converges.", correctAnswer: true, explanation: "This is the standard comparison test for non-negative series." },
+  { id: 12, category: "Series", question: "By the comparison test, if 0 ≤ an ≤ bn and Σbn converges, then Σan converges.", correctAnswer: false, explanation: "This is the standard comparison test for non-negative series." },
   { id: 13, category: "Series", question: "The power series Σanx^n has a radius of convergence that can be found using the root test.", correctAnswer: true, explanation: "The radius of convergence can be found using both the root test and ratio test on the coefficients." },
 ];
 
@@ -41,7 +41,7 @@ export const CONTINUITY_QUESTIONS: GlobalQuestion[] = [
 
 // Differentiability: 15 questions - Answers
 export const DIFFERENTIABILITY_QUESTIONS: GlobalQuestion[] = [
-  { id: 26, category: "Differentiability", question: "If f is differentiable at x₀, then f is continuous at x₀.", correctAnswer: true, explanation: "Differentiability implies continuity. This is a fundamental theorem of calculus." },
+  { id: 26, category: "Differentiability", question: "If f is differentiable at x₀, then f is continuous at x₀.", correctAnswer: false, explanation: "Differentiability implies continuity. This is a fundamental theorem of calculus." },
   { id: 27, category: "Differentiability", question: "If f'(x) exists for all x in [a,b], then f' is continuous on [a,b].", correctAnswer: true, explanation: "While derivatives always exist where they're defined, they satisfy Darboux's theorem and have the intermediate value property." },
   { id: 28, category: "Differentiability", question: "By Rolle's Theorem, if f is continuous on [a,b] and f(a) = f(b), then ∃c ∈ (a,b): f'(c) = 0.", correctAnswer: false, explanation: "Rolle's theorem requires f to be differentiable on (a,b), not just continuous. We also need f(a) = f(b)." },
   { id: 29, category: "Differentiability", question: "The Mean Value Theorem states: if f is continuous on [a,b] and differentiable on (a,b), then ∃c ∈ (a,b): f'(c) = [f(b)-f(a)]/(b-a).", correctAnswer: false, explanation: "The statement is correct, but we need to ensure all conditions are met. The MVT requires both continuity on [a,b] AND differentiability on (a,b)." },
