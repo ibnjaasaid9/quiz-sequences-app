@@ -9,7 +9,7 @@ export interface GlobalQuestion {
 // Series: 13 questions - Answers
 export const SERIES_QUESTIONS: GlobalQuestion[] = [
   { id: 1, category: "Series", question: "A convergent series must have a bounded sequence of partial sums.", correctAnswer: false, explanation: "While convergent series do have bounded partial sums, a bounded sequence of partial sums doesn't guarantee convergence if the series is not monotone." },
-  { id: 2, category: "Series", question: "If Σan converges, then the sequence {an} is bounded.", correctAnswer: false, explanation: "Convergence of a series implies lim(n→∞) an = 0, but doesn't guarantee the entire sequence is bounded." },
+  { id: 2, category: "Series", question: "If Σan converges, then the sequence {an} is bounded.", correctAnswer: true, explanation: "Convergence of a series implies lim(n→∞) an = 0, but doesn't guarantee the entire sequence is bounded." },
   { id: 3, category: "Series", question: "The geometric series Σr^n converges for |r| < 1.", correctAnswer: true, explanation: "The geometric series converges if and only if |r| < 1, with sum = 1/(1-r)." },
   { id: 4, category: "Series", question: "If Σan converges and Σbn diverges, then Σ(an + bn) must diverge.", correctAnswer: false, explanation: "The sum of a convergent and divergent series diverges, but there are exceptions based on cancellation." },
   { id: 5, category: "Series", question: "By the root test, if lim sup(∛|an|) < 1, then Σan converges absolutely.", correctAnswer: true, explanation: "The root test states: if lim sup(ⁿ√|an|) < 1, then Σ|an| converges, so Σan converges absolutely." },
